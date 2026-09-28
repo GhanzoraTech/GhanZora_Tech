@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Page title -->
+    <title>GhanZora Tech | AI, Software & Research Solutions</title>
+
+    <!-- SEO: Search engine description -->
+    <meta name="description"
+          content="GhanZora Tech provides AI, software, web development, data analytics, and research solutions for students, researchers, businesses, and organizations.">
+
+    <!-- SEO: Tell search engines what this website is about -->
+    <meta name="keywords"
+          content="GhanZora Tech, AI solutions, machine learning, web development, software solutions, data analytics, research support, research services, research paper writing, digital solutions">
+
+    <!-- SEO: Author -->
+    <meta name="author" content="Engr Ghanwa Haider">
+
+    <!-- SEO: Allow search engines to index and follow links -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="site-header">
+
+    <div class="logo">
+
+        <a href="{{ url_for('home') }}" aria-label="GhanZora Tech Home">
+
+            <span class="logo-top">
+                <span class="logo-g">G</span>HANZORA
+            </span>
+
+            <span class="logo-bottom">
+                T<span>ECH</span>
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <a href="{{ url_for('home') }}" class="nav-button">
+            HOME
+        </a>
+
+
+        <!-- SERVICES -->
+
+        <div class="nav-item">
+
+            <button class="nav-button dropdown-btn"
+                    type="button"
+                    aria-label="Open Services menu">
+
+                SERVICES
+
+            </button>
+
+            <div class="dropdown-menu">
+
+                <a href="#">
+                    AI &amp; Machine Learning
+                </a>
+
+                <a href="#">
+                    Web Development
+                </a>
+
+                <a href="#">
+                    Software Solutions
+                </a>
+
+                <a href="#">
+                    Data Analytics
+                </a>
+
+                <a href="#">
+                    Research
+                </a>
+
+                <a href="#">
+                    Database Management
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+
+        <div class="nav-item">
+
+            <button class="nav-button dropdown-btn"
+                    type="button"
+                    aria-label="Open Projects menu">
+
+                PROJECTS
+
+            </button>
+
+            <div class="dropdown-menu">
+
+                <a href="#">
+                    Bio Medical Signal Classification
+                </a>
+
+                <a href="#">
+                    Image Segmentation and Classification
+                </a>
+
+                <a href="#">
+                    Object Tracking and Detection
+                </a>
+
+                <a href="#">
+                    Forensic Document Analysis
+                </a>
+
+                <a href="#">
+                    Federated Learning
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESEARCH -->
+
+        <div class="nav-item">
+
+            <button class="nav-button dropdown-btn"
+                    type="button"
+                    aria-label="Open Research menu">
+
+                RESEARCH
+
+            </button>
+
+            <div class="dropdown-menu">
+
+                <a href="#">
+                    Research Literature
+                </a>
+
+                <a href="#">
+                    Thesis Writing
+                </a>
+
+                <a href="#">
+                    Research Paper Writing
+                </a>
+
+                <a href="#">
+                    Research Paper Review
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HAMBURGER
+    ========================== -->
+
+    <button class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Open navigation menu">
+
+        <i class="fas fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<!-- =========================
+     MAIN PAGE HEADING
+========================== -->
+
+<h1>
+
+    Technology That
+
+    <span>Moves You Forward</span>
+
+</h1>
+
+
+<!-- =========================
+     HERO SECTION
+========================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p>
+            GhanZora Tech delivers AI, software and digital solutions
+        </p>
+
+        <p>
+            designed for the future while supporting research, innovation
+        </p>
+
+        <p>
+            and customized software solutions.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="{{ url_for('static', filename='images/image 1.png') }}"
+             alt="GhanZora Tech AI and technology animation">
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-copyright">
+
+        © 2026 Ghanzora Tech. All Rights Reserved. | Built for Innovation • Technology • Research
+
+    </div>
+
+    <div class="floating-contact-icons">
+
+        <!-- Gmail -->
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ghanzoratechsolutions@gmail.com"
+           class="contact-icon gmail-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Email us">
+
+            <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+
+        <!-- Facebook -->
+
+        <a href="https://www.facebook.com/yourpage"
+           class="contact-icon facebook-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Facebook">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </a>
+
+
+        <!-- WhatsApp -->
+
+        <a href="https://wa.me/+923338780147"
+           class="contact-icon whatsapp-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+
+        <!-- Google Meet -->
+
+        <a href="https://meet.google.com/your-meeting-code"
+           class="contact-icon meet-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Google Meet">
+
+            <i class="fa-solid fa-video"></i>
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+    /* =========================
+       DROPDOWN MENUS
+    ========================== */
+
+    const dropdownButtons =
+        document.querySelectorAll(".dropdown-btn");
+
+    dropdownButtons.forEach(button => {
+
+        button.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            const currentItem =
+                this.parentElement;
+
+            document
+                .querySelectorAll(".nav-item")
+                .forEach(item => {
+
+                    if (item !== currentItem) {
+
+                        item.classList.remove("active");
+
+                    }
+
+                });
+
+            currentItem.classList.toggle("active");
+
+        });
+
+    });
+
+
+    /* =========================
+       CLOSE DROPDOWN
+    ========================== */
+
+    document.addEventListener("click", function () {
+
+        document
+            .querySelectorAll(".nav-item")
+            .forEach(item => {
+
+                item.classList.remove("active");
+
+            });
+
+    });
+
+
+    /* =========================
+       MOBILE NAVIGATION
+    ========================== */
+
+    const hamburger =
+        document.getElementById("hamburger");
+
+    const navbar =
+        document.querySelector(".navbar");
+
+    if (hamburger && navbar) {
+
+        hamburger.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            navbar.classList.toggle("mobile-active");
+
+        });
+
+    }
+
+</script>
+
+
+</body>
+
+</html>
